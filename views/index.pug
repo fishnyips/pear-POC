@@ -1,0 +1,23 @@
+extends layout
+block content
+    main.login-form
+        div.cotainer
+            div(class='row justify-content-center')
+                div.col-md-8
+                    div.card
+                        div.card-header Login
+                        div.card-body
+                            form(action='/' method='post')
+                                div.form-group.row
+                                    label(for='email' class='col-md-4 col-form-label text-md-right') Username
+                                    div.col-md-5
+                                        input(type='text' id='email' class='form-control' name='email' required autofocus)
+
+                                div.form-group.row
+                                    label(for='password' class='col-md-4 col-form-label text-md-right') Password
+                                    div.col-md-5
+                                        input(type='password' id='password' class='form-control' name='password' required)
+
+                                div.col-md-6.offset-md-5
+                                    button#login(class='btn btn-primary btn-sm' type='submit') Login
+                                    //a(href='#' class='btn btn-link') Forgot Your Password

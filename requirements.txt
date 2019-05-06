@@ -1,0 +1,10 @@
+Backend:
+- simple node.js to host web server, no api needed at the moment
+- deploy on heroku
+
+Frontend:
+- Follow UI design
+	- bootstrap, Semantics UI
+- Animations will be needed
+
+	
