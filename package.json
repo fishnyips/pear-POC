@@ -1,6 +1,6 @@
 {
   "name": "pear",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "test": "mocha --exit || exit 0",
