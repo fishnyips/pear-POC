@@ -26,7 +26,7 @@ router.use(session({
 router.get('/', function(req, res, next) {
     var session  = req.session;
     if(!session.user) {
-        res.render('index');
+        res.render('public');
     }
     else {
         res.render('dashboard', { firstName: session.user.firstName, lastName: session.user.lastName, userId: session.user.id });

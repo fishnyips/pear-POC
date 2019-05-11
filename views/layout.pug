@@ -2,7 +2,7 @@ html
 	head
 		meta(charset='utf-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-
+		link(href='/stylesheets/layout.css' rel='stylesheet')
 		link(rel='dns-prefetch' href='https://fonts.gstatic.com')
 		link(href='https://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css')
 		link(href='/stylesheets/bootstrap-4.3.1.min.css' rel='stylesheet' id='bootstrap-css')
@@ -12,7 +12,8 @@ html
 		link(rel='stylesheet' href='/stylesheets/login.css')
 		link(rel='stylesheet' href='/stylesheets/sticky-footer-navbar.css')
 	body.d-flex.flex-column.h-100
-		nav(class='navbar navbar-expand-lg navbar-light navbar-chatbot')
+
+		nav
 			div.container
 				a.navbar-brand(href='/')
 					//img(src='/images/cgi-logo.png')
@@ -22,6 +23,10 @@ html
 					ul(class='navbar-nav ml-auto')
 						//li.nav-item
 							//a.nav-link(href='/help') Help
+		div.pear-name
+		br
+		br
+		div.sign-in-butt
 	block content
 
 	footer.footer.mt-auto.py-3
