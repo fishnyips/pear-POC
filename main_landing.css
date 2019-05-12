@@ -1,0 +1,74 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*images*/
+#pear-name{
+  display: block;
+  margin: 0vh 0vh 5vh 0vh;
+  max-width: 60%;
+  height: auto
+}
+
+#pear-logo {
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin: 15vh 0vh 0vh 0vh;
+}
+
+/*text*/
+p {
+  color: #A0A0A0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+}
+
+#value-prop-2{
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5vh;
+  }
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/*buttons*/
+.btn-success {
+  background-color: #C6C642;
+  border-color: #C6C642;
+}
+
+#student-button {
+  margin-left: 5vh;
+}
+
+@media (max-width: 375px) {
+  .btn-success {
+
+  }
+}
