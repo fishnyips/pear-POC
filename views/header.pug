@@ -1,0 +1,71 @@
+html
+    head
+        meta(charset='utf-8')
+        title PEAR main
+        meta(content='width=device-width, initial-scale=1.0', name='viewport')
+        // Need to fill these in for SEO later
+        meta(content='', name='keywords')
+        meta(content='', name='description')
+        // Google Fonts
+        link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
+        // Bootstrap CSS File
+        link(href='public/stylesheets/bootstrap-4.3.1.min.css', rel='stylesheet')
+        // CSS style file
+        link(href='/stylesheets/main_landing.css', rel='stylesheet')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel='dns-prefetch' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css')
+        link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+        script(src='/javascripts/bootstrap.bundle.min.js')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700', rel='stylesheet')
+        link(href='/animate/animate.min.css', rel='stylesheet')
+        link(href='/stylesheets/layout.css' rel='stylesheet')
+        link(href='/stylesheets/style.css', rel='stylesheet')
+    body
+        div.nav-header
+            nav#nav-menu-container
+                ul.nav-menu
+                    li.menu-active
+                        a(href='#hero') JOBS
+                    li
+                        a(href='#about') HACKATHON
+                    li
+                        a(href='#services') ABOUT US
+            nav#nav-menu-container-right
+                ul.nav-menu
+                    li
+                        a(href='#portfolio') For Charities
+                    li
+                        a.btn.btn-option-nav(href='#team') Sign Up
+                    //
+                      ==========================
+                      li.menu-has-children
+                                          a(href='') Drop Down
+                                          ul
+                                              li
+                                                  a(href='#') Drop Down 1
+                                              li.menu-has-children
+                                                  a(href='#') Drop Down 2
+                                                  ul
+                                                      li
+                                                          a(href='#') Deep Drop Down 1
+                                                      li
+                                                          a(href='#') Deep Drop Down 2
+                                                      li
+                                                          a(href='#') Deep Drop Down 3
+                                                      li
+                                                          a(href='#') Deep Drop Down 4
+                                                      li
+                                                          a(href='#') Deep Drop Down 5
+                                              li
+                                                  a(href='#') Drop Down 3
+                                              li
+                                                  a(href='#') Drop Down 4
+                                              li
+                                                  a(href='#') Drop Down 5
+                                      li
+                                          a(href='#contact') Contact Us
+                      ============================
+
+
+    block content
