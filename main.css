@@ -1,0 +1,26 @@
+body{
+  background: rgb(185,177,58);
+}
+.student_text{
+  color: rgb(112,159,182);
+}
+.charity_text{
+  color: rgb(194,83,50);
+}
+.project_text{
+  color: rgb(233,180,31);
+}
+.student_background{
+  background: rgb(112,159,182);
+}
+.charity_background{
+  background: rgb(194,83,50);
+}
+.project_background{
+  background: rgb(233,180,31);
+}
+#signup{
+  font-size: 3rem;
+  color: rgb(228,228,155);
+  text-shadow: 3px 3px 6px rgb(150,150,50);
+}
