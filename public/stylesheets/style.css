@@ -8,6 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
+  overflow-x: hidden;
   margin:0;
   padding:0;
   background: #fff;
@@ -318,7 +319,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#student-section{
+#user-statistics{
+  height: 550px;
   background: rgb(185,177,58);
   width: 100%;
 }
@@ -346,6 +348,80 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 3px 3px 6px rgb(150,150,50);
 }
 
+.app {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+}
+.app > * {
+  grid-column: 2 / -2;
+}
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+#job-scroll-preview {
+  display: grid;
+  overflow-x: auto;
+  height: 550px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, calc(90% - 40px));
+  grid-template-rows: minmax(150px, 1fr);
+  padding: 0 20px;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  scroll-snap-align: start;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.soft-keyboard {
+  height: 58%;
+  width: 32%;
+  float: right;
+  right: 100px;
+  bottom: 50px;
+  position: absolute;
+}
+
+.software-desc {
+  height: 60%;
+  width: 28%;
+  float: right;
+  left: 100px;
+  top: 50px;
+  position: absolute;
+}
+
+#design-card {
+  background: #f8f8f8;
+}
+
+#software-card {
+  background: white;
+}
+
+.design-icon {
+  height: 50%;
+  width: 38%;
+  float: right;
+  bottom: 50px;
+  left: 100px;
+  position: absolute;
+}
+
+.design-desc {
+  height: 60%;
+  width: 23%;
+  float: right;
+  right: 100px;
+  top: 50px;
+  position: absolute;
+}
 
 
 @media (max-width: 768px) {

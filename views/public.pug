@@ -1,6 +1,5 @@
 extends header
 block content
-
     .container
         img#pear-name(src='/images/pear-name.png')
         p#value-prop-1
@@ -10,7 +9,7 @@ block content
             .col-1
             .col-5
                 button#student-button.btn.btn-option.btn-block.float-right(type='button'
-                    onclick="window.location.href = '#student-section';") STUDENTS
+                    onclick="window.location.href = '#software-card';") STUDENTS
             .col-5
                 button#charity-button.btn.btn-option.float-left.btn-block(type='button'
                     onclick="window.location.href = '#charities-info';") CHARITIES
@@ -22,7 +21,7 @@ block content
         br
         br
         br
-    div#student-section
+    div#user-statistics
         h1#signup.text-center.mb-sm-0.font-weight-bold.p-4 SIGN UP TODAY!
         #signup_body.d-flex.text-center.justify-content-center.p-5
             .d-flex.flex-column.bg-light.m-3.shadow(style='width:16rem; height: 20rem;')
@@ -52,5 +51,14 @@ block content
                     |  COMPLETED
                 .d-flex.align-items-center.justify-content-center.project_background(style='height: 7rem')
                     h1.text-light.font-weight-bold 100
+    .app
+        #job-scroll-preview
+            .card(id='software-card')
+                img(src='/images/keyboard.png', alt='designer icon').soft-keyboard
+                img(src='/images/software-desc.png' alt='designer description').software-desc
+            .card(id='design-card')
+                img(src='/images/design-icon.png', alt='designer icon').design-icon
+                img(src='/images/designer-desc.png' alt='designer description').design-desc
 
-        script(type='text/javascript').
+
+        
