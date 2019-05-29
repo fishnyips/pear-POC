@@ -1,65 +1,64 @@
 extends header
 block content
-    .wrapper
-        .container
-            img#pear-name(src='/images/pear-name.png')
-            p#value-prop-1
-                | To create an open platform that increases charities' accessibility to student talent,
-            p#value-prop-2 and equips students with professional experience through charitable projects
-            .row
-                .col-1
-                .col-5
-                    button#student-button.btn.btn-option.btn-block.float-right(type='button'
-                        onclick="window.location.href = '#software-card';") STUDENTS
-                .col-5
-                    button#charity-button.btn.btn-option.float-left.btn-block(type='button'
-                        onclick="window.location.href = '#charities-info';") CHARITIES
-                .col-1
-            img#pear-logo(src='/images/pear-logo.png')
-            br
-            br
-            br
-            br
-            br
-            br
-        div#user-statistics
-            h1#signup.text-center.mb-sm-0.font-weight-bold.p-4 SIGN UP TODAY!
-            #signup_body.d-flex.text-center.justify-content-center.p-5
-                .d-flex.flex-column.bg-light.m-3.shadow(style='width:16rem; height: 20rem;')
-                    div(style='height:8rem')
-                        img.p-5(src='/images/student.png', alt='...')
-                    div(style='height:5rem')
-                        | NUMBER OF
-                        span.student_text STUDENTS
-                        |  REGISTERED
-                    .d-flex.align-items-center.justify-content-center.student_background(style='height: 7rem')
-                        h1.text-light.font-weight-bold 10,000
-                .d-flex.flex-column.bg-light.m-3.shadow(style='width: 16rem; height: 20rem;')
-                    div(style='height:8rem')
-                        img.p-5(src='/images/charity.png', alt='...')
-                    div(style='height:5rem')
-                        | NUMBER OF
-                        span.charity_text CHARITIES
-                        |  REGISTERED
-                    .d-flex.align-items-center.justify-content-center.charity_background(style='height: 7rem')
-                        h1.text-light.font-weight-bold 1,000
-                .d-flex.flex-column.bg-light.m-3.shadow(style='width: 16rem; height: 20rem;')
-                    div(style='height:8rem')
-                        img.p-5(src='/images/project.png', alt='...')
-                    div(style='height:5rem')
-                        | NUMBER OF
-                        span.project_text PROJECTS
-                        |  COMPLETED
-                    .d-flex.align-items-center.justify-content-center.project_background(style='height: 7rem')
-                        h1.text-light.font-weight-bold 100
-        .app
-            #job-scroll-preview
-                .card(id='software-card')
-                    img(src='/images/keyboard.png', alt='designer icon').soft-keyboard
-                    img(src='/images/software-desc.png' alt='designer description').software-desc
-                .card(id='design-card')
-                    img(src='/images/design-icon.png', alt='designer icon').design-icon
-                    img(src='/images/designer-desc.png' alt='designer description').design-desc
+    .container
+        img#pear-name(src='/images/pear-name.png')
+        p#value-prop-1
+            | To create an open platform that increases charities' accessibility to student talent,
+        p#value-prop-2 and equips students with professional experience through charitable projects
+        .row
+            .col-1
+            .col-5
+                button#student-button.btn.btn-option.btn-block.float-right(type='button'
+                    onclick="window.location.href = '#software-card';") STUDENTS
+            .col-5
+                button#charity-button.btn.btn-option.float-left.btn-block(type='button'
+                    onclick="window.location.href = '#charities-info';") CHARITIES
+            .col-1
+        img#pear-logo(src='/images/pear-logo.png')
+        br
+        br
+        br
+        br
+        br
+        br
+    div#user-statistics
+        h1#signup.text-center.mb-sm-0.font-weight-bold.p-4 SIGN UP TODAY!
+        #signup_body.d-flex.text-center.justify-content-center.p-5
+            .d-flex.flex-column.bg-light.m-3.shadow(style='width:16rem; height: 20rem;')
+                div(style='height:8rem')
+                    img.p-5(src='/images/student.png', alt='...')
+                div(style='height:5rem')
+                    | NUMBER OF
+                    span.student_text STUDENTS
+                    |  REGISTERED
+                .d-flex.align-items-center.justify-content-center.student_background(style='height: 7rem')
+                    h1.text-light.font-weight-bold 10,000
+            .d-flex.flex-column.bg-light.m-3.shadow(style='width: 16rem; height: 20rem;')
+                div(style='height:8rem')
+                    img.p-5(src='/images/charity.png', alt='...')
+                div(style='height:5rem')
+                    | NUMBER OF
+                    span.charity_text CHARITIES
+                    |  REGISTERED
+                .d-flex.align-items-center.justify-content-center.charity_background(style='height: 7rem')
+                    h1.text-light.font-weight-bold 1,000
+            .d-flex.flex-column.bg-light.m-3.shadow(style='width: 16rem; height: 20rem;')
+                div(style='height:8rem')
+                    img.p-5(src='/images/project.png', alt='...')
+                div(style='height:5rem')
+                    | NUMBER OF
+                    span.project_text PROJECTS
+                    |  COMPLETED
+                .d-flex.align-items-center.justify-content-center.project_background(style='height: 7rem')
+                    h1.text-light.font-weight-bold 100
+    .app
+        #job-scroll-preview
+            .card(id='software-card')
+                img(src='/images/keyboard.png', alt='designer icon').soft-keyboard
+                img(src='/images/software-desc.png' alt='designer description').software-desc
+            .card(id='design-card')
+                img(src='/images/design-icon.png', alt='designer icon').design-icon
+                img(src='/images/designer-desc.png' alt='designer description').design-desc
 
 
-            
+        

@@ -9,6 +9,7 @@ var http = require("http");
 var constants = require('./lib/constants');
 
 var indexRouter = require('./routes/index');
+var jobSearchRouter = require('./routes/job-search');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/job-search', jobSearchRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

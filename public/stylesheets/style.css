@@ -405,9 +405,23 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
 }
 
-.wrapper {
-  width:960px;
-  margin:0 auto;
+.categories {
+  margin: auto;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 50px;
+  color: darkgrey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+.categories button {
+  width: 100px;
+  height: 30px;
+  margin-left: 40px;
+  border-radius: 0px;
 }
 
 .design-icon {
