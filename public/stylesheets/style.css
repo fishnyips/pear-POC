@@ -308,14 +308,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+#li-sign-up {
+  padding-top: 4px !important;
+  display:block !important;
+}
+
 .btn-option-nav {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: #d1d364;
   border-color: #d1d364;
   color: white;
-  height: 50px;
-  line-height: 50px;
-  padding-top: 20px;
-  padding-bottom: 0px;
+  height: 35px;
+  padding-top:5px;
 }
 
 
@@ -407,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .categories {
   margin: auto;
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
   padding-top: 50px;
   color: darkgrey;
@@ -416,13 +424,130 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.search-bar {
+  width:70%;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.search-bar * {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+  height: 30px;
+  width:400px;
+}
+
+.search {
+  float:left;
+}
+
+::placeholder {
+  color: darkgrey;
+}
+
+.select-input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: darkgrey;
+  background-color: white;
+  border:0px;
+  outline:0px;
+  width:302px;
+  height:28px;
+  size: 100%;
+}
+
+.search-input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: darkgrey;
+  height:28px;
+  width:399px;
+  border: none;
+  box-sizing:border-box !important;
+  padding-left:20px;
+}
+
+.location-filter {
+  float:left;
+  width: 304px;
+}
+
+.type-filter{
+  width: 304px;
+  float: left;
+}
+
+.drop-down {
+  border-color: darkgrey;
+  width: 400px;
+  background-color:black;
+}
 
 .categories button {
-  width: 100px;
+  font-size: 12px;
+  font-family: "Poppins Light", sans-serif;
+  font-weight: 400;
+  border-color: darkgrey;
+  width: 112px;
   height: 30px;
   margin-left: 40px;
   border-radius: 0px;
 }
+
+#all-butt{
+  background-color: darkgrey;
+  border-color: darkgrey;
+  color: white;
+}
+
+#soft-butt{
+  background-color: #61aebb;
+  border-color: #61aebb;
+  color: white;
+}
+
+#science-butt{
+  background-color: #609c92;
+  border-color: #609c92;
+  color: white;
+}
+
+#other-butt{
+  background-color: #c6c642;
+  border-color: #c6c642;
+  color: white;
+}
+
+#business-butt{
+  background-color: #efbe30;
+  border-color: #efbe30;
+  color: white;
+}
+
+#design-butt{
+  background-color: #ba4d2e;
+  border-color: #ba4d2e;
+  color: white;
+}
+
+#all-butt:hover{
+  background-color: white;
+  border-color: darkgrey;
+  color: darkgrey;
+}
+
+
+
+button {outline:0 !important;}
+
+.active_button {
+  background-color: white !important;
+}
+
 
 .design-icon {
   height: 50%;

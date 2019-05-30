@@ -2,9 +2,47 @@ extend header
 block content
     .categories
         span CATEGORIES
-        button.btn.btn-outline-secondary(id='all-butt')
-        button.btn.btn-outline-secondary(id='soft-butt')
-        button.btn.btn-outline-secondary(id='design-butt')
-        button.btn.btn-outline-secondary(id='business-butt')
-        button.btn.btn-outline-secondary(id='science-butt')
-        button.btn.btn-outline-secondary(id='other-butt')
+        button.btn.btn-outline-secondary(id='all-butt') All
+        button.btn.btn-outline-secondary(id='soft-butt') Software
+        button.btn.btn-outline-secondary(id='design-butt') Design
+        button.btn.btn-outline-secondary(id='business-butt') Business
+        button.btn.btn-outline-secondary(id='science-butt') Science
+        button.btn.btn-outline-secondary(id='other-butt') Other
+    br
+    br
+    .search-bar
+        .search
+            input.search-input(type='text', placeholder='Search by keywords')
+        .location-filter
+            select.select-input 
+                // –– will need to use db to fill here ––
+                option(disabled='', selected='', value='') Location
+                option(value='volvo') Volvo
+                option(value='saab') Saab
+                option(value='opel') Opel
+                option(value='audi') Audi
+        .type-filter
+            select.select-input 
+                // –– will need to use db to fill here ––
+                option(disabled='', selected='', value='') Job Type
+                option(value='volvo') Volvo
+                option(value='saab') Saab
+                option(value='opel') Opel
+                option(value='audi') Audi
+    
+    script.
+        $('button').on('click', function(){
+            let colour = $(this).css( "border-color" );
+            $('button').removeClass('active_button');
+            $('button').css('color', 'white');
+            $(this).addClass('active_button');
+            $(this).css('color', colour);
+        });
+        //Home button active on page load
+        $(document).ready(function(){
+            console.log(99)
+            let colour = $('#all-butt').css( "background-color" );
+            $('#all-butt').addClass('active_button');
+            $('#all-butt').css('color', colour);
+        });
+    
