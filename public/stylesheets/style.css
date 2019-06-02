@@ -446,9 +446,9 @@ h1, h2, h3, h4, h5, h6 {
 .job-search-wrap {
   display: flex;
   flex-direction: column;
-  width:65.69%;
+  width:66.4%;
   margin: 0 auto;
-  height: 30px;
+  height: 100%;
 }
 
 * { box-sizing: border-box; }
@@ -462,6 +462,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
   border: 1px solid darkgrey;
+  height: 200px;
 }
 
 .select-input {
