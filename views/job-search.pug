@@ -1,35 +1,40 @@
 extend header
 block content
-    .categories
-        span CATEGORIES
-        button.btn.btn-outline-secondary(id='all-butt') All
-        button.btn.btn-outline-secondary(id='soft-butt') Software
-        button.btn.btn-outline-secondary(id='design-butt') Design
-        button.btn.btn-outline-secondary(id='business-butt') Business
-        button.btn.btn-outline-secondary(id='science-butt') Science
-        button.btn.btn-outline-secondary(id='other-butt') Other
-    br
-    br
-    .search-bar
-        .search
-            input.search-input(type='text', placeholder='Search by keywords')
-        .location-filter
-            select.select-input 
-                // –– will need to use db to fill here ––
-                option(disabled='', selected='', value='') Location
-                option(value='volvo') Volvo
-                option(value='saab') Saab
-                option(value='opel') Opel
-                option(value='audi') Audi
-        .type-filter
-            select.select-input 
-                // –– will need to use db to fill here ––
-                option(disabled='', selected='', value='') Job Type
-                option(value='volvo') Volvo
-                option(value='saab') Saab
-                option(value='opel') Opel
-                option(value='audi') Audi
-    
+    .job-search-wrap
+        .categories
+            span CATEGORIES
+            button.btn.btn-outline-secondary(id='all-butt') All
+            button.btn.btn-outline-secondary(id='soft-butt') Software
+            button.btn.btn-outline-secondary(id='design-butt') Design
+            button.btn.btn-outline-secondary(id='business-butt') Business
+            button.btn.btn-outline-secondary(id='science-butt') Science
+            button.btn.btn-outline-secondary(id='other-butt') Other
+        br
+        br
+        .search-bar
+            .search
+                input.search-input(type='text', placeholder='Search by keywords')
+            .location-filter
+                select.select-input
+                    // –– will need to use db to fill here ––
+                    option.select-input(disabled='', selected='', value='') Location
+                    option.select-input(value='volvo') Volvo
+                    option.select-input(value='saab') Saab
+                    option.select-input(value='opel') Opel
+                    option.select-input(value='audi') Audi
+            .type-filter
+                select.select-input
+                    // –– will need to use db to fill here ––
+                    option(disabled='', selected='', value='') Job Type
+                    option(value='volvo') Volvo
+                    option(value='saab') Saab
+                    option(value='opel') Opel
+                    option(value='audi') Audi
+        br
+        br
+        .job-row
+        .job-row
+
     script.
         $('button').on('click', function(){
             let colour = $(this).css( "border-color" );
