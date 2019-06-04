@@ -315,15 +315,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-option-nav {
   margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: absolute !important;
+  top: 50% !important;
+  -ms-transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
   background-color: #d1d364;
   border-color: #d1d364;
-  color: white;
+  color: white !important;
   height: 35px;
-  padding-top:5px;
+  padding-top:5px!important;
 }
 
 
@@ -414,8 +414,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .categories {
-  margin: auto;
-  width: 70%;
+  float: left;
+  width: 100%;
   margin: 0 auto;
   padding-top: 50px;
   color: darkgrey;
@@ -425,17 +425,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-bar {
-  width:70%;
+  clear:left;
+  width:100%;
   margin: 0 auto;
   height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .search-bar * {
-  border-style: solid;
-  border-width: 1px;
-  border-color: darkgrey;
-  height: 30px;
-  width:400px;
+  border: 1px solid darkgrey;
 }
 
 .search {
@@ -446,17 +445,114 @@ h1, h2, h3, h4, h5, h6 {
   color: darkgrey;
 }
 
+.job-search-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 1064px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.test{
+  width: 100%;
+  height: auto;
+  float:left;
+}
+
+.job-box {
+  float:left;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative; 
+  width: 314.66px;
+  height: 260px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.job-box button {
+  float:left;
+  padding: 0px 0;
+  font-size: 12px;
+  font-family: "Poppins Light", sans-serif;
+  font-weight: 400;
+  border-color: darkgrey;
+  width: 90px;
+  height: 22px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 18px;
+  border-radius: 0px;
+}
+
+.job-box * {
+  margin-top: 10px;
+  margin-bottom:0px;
+}
+
+.job-box h1 {
+  margin-top: 40px;
+  margin-left: 45px;
+  margin-right: 45px;
+  font-size: 20px;
+  color: grey;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+.job-box span {
+  font-size: 12px;
+  color: darkgray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.job-box p {
+  margin-top: 6px;
+  font-size: 12px;
+  color: darkgray;
+  margin-left: 45px;
+  margin-right: 45px;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 400;
+}
+
+
+.decor-strip {
+  background-color: #c6c642;
+  position: absolute;
+  height: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
 .select-input {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: darkgrey;
-  background-color: white;
+  border-radius: 0%;
+  background-color: white !important;
   border:0px;
   outline:0px;
-  width:302px;
+  width:297px;
   height:28px;
-  size: 100%;
+  padding-left:20px;
+}
+
+options {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: darkgrey;
+  border-radius: 0%;
+  background-color: white !important;
+  border:0px;
+  outline:0px;
+  width:297px;
+  height:28px;
+  padding-left:20px;
 }
 
 .search-input {
@@ -465,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   color: darkgrey;
   height:28px;
-  width:399px;
+  width:423px;
   border: none;
   box-sizing:border-box !important;
   padding-left:20px;
@@ -473,11 +569,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .location-filter {
   float:left;
-  width: 304px;
+  width: 299px;
 }
 
 .type-filter{
-  width: 304px;
+  width: 299px;
   float: left;
 }
 
@@ -487,15 +583,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color:black;
 }
 
-.categories button {
+.categories * {
+  padding: 0px 0;
+  float:left;
   font-size: 12px;
   font-family: "Poppins Light", sans-serif;
   font-weight: 400;
   border-color: darkgrey;
   width: 112px;
   height: 30px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   border-radius: 0px;
+}
+
+.categories span {
+  padding-top:6px;
+  float: left;
+  display: block;
 }
 
 #all-butt{

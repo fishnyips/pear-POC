@@ -1,35 +1,68 @@
 extend header
 block content
-    .categories
-        span CATEGORIES
-        button.btn.btn-outline-secondary(id='all-butt') All
-        button.btn.btn-outline-secondary(id='soft-butt') Software
-        button.btn.btn-outline-secondary(id='design-butt') Design
-        button.btn.btn-outline-secondary(id='business-butt') Business
-        button.btn.btn-outline-secondary(id='science-butt') Science
-        button.btn.btn-outline-secondary(id='other-butt') Other
-    br
-    br
-    .search-bar
-        .search
-            input.search-input(type='text', placeholder='Search by keywords')
-        .location-filter
-            select.select-input 
-                // –– will need to use db to fill here ––
-                option(disabled='', selected='', value='') Location
-                option(value='volvo') Volvo
-                option(value='saab') Saab
-                option(value='opel') Opel
-                option(value='audi') Audi
-        .type-filter
-            select.select-input 
-                // –– will need to use db to fill here ––
-                option(disabled='', selected='', value='') Job Type
-                option(value='volvo') Volvo
-                option(value='saab') Saab
-                option(value='opel') Opel
-                option(value='audi') Audi
-    
+    .job-search-wrap
+        .categories
+            span CATEGORIES
+            button.btn.btn-outline-secondary(id='all-butt') All
+            button.btn.btn-outline-secondary(id='soft-butt') Software
+            button.btn.btn-outline-secondary(id='design-butt') Design
+            button.btn.btn-outline-secondary(id='business-butt') Business
+            button.btn.btn-outline-secondary(id='science-butt') Science
+            button.btn.btn-outline-secondary(id='other-butt') Other
+        br
+        br 
+        .search-bar
+            .search
+                input.search-input(type='text', placeholder='Search by keywords')
+            .location-filter
+                select.select-input
+                    // –– will need to use db to fill here ––
+                    option(disabled='', selected='', value='') Location
+                    option(value='volvo') Volvo
+                    option(value='saab') Saab
+                    option(value='opel') Opel
+                    option(value='audi') Audi
+            .type-filter
+                select.select-input
+                    // –– will need to use db to fill here ––
+                    option(disabled='', selected='', value='') Job Type
+                    option(value='volvo') Volvo
+                    option(value='saab') Saab
+                    option(value='opel') Opel
+                    option(value='audi') Audi
+        br
+        br
+        .test
+            .job-box
+                h1 Project name
+                p Waterloo, ON
+                span(style='padding-left: 45px;') by &nbsp;
+                span(style='color: #879017; text-transform: uppercase;') <b> ngo charity </b>
+                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at. Partem percipit at ius. Est mundi essent efficiantur id.
+                .decor-strip
+                p(style='padding-top:15px; color: grey; float:left;') Looking for:
+                button.btn.btn-outline-secondary(id='soft-butt') Software
+                button.btn.btn-outline-secondary(id='design-butt') Design
+                button.btn.btn-outline-secondary(id='business-butt') Business
+            .job-box
+                h1 Project name
+                p Toronto, ON
+                span(style='padding-left: 45px;') by &nbsp;
+                span(style='color: #879017; text-transform: uppercase;') <b> ngo charity </b>
+                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at. Partem percipit at ius. Est mundi essent efficiantur id.
+                .decor-strip
+                p(style='padding-top:15px; color: grey; float:left;') Looking for:
+                button.btn.btn-outline-secondary(id='business-butt') Business
+            .job-box
+                h1 Project name
+                p Toronto, ON
+                span(style='padding-left: 45px;') by &nbsp;
+                span(style='color: #879017; text-transform: uppercase;') <b> ngo charity </b>
+                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at. Partem percipit at ius. Est mundi essent efficiantur id.
+                .decor-strip
+                p(style='padding-top:15px; color: grey; float:left;') Looking for:
+                button.btn.btn-outline-secondary(id='business-butt') Business
+
     script.
         $('button').on('click', function(){
             let colour = $(this).css( "border-color" );
