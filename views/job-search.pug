@@ -32,36 +32,65 @@ block content
                     option(value='audi') Audi
         br
         br
-        .test
+        .job-cards
             .job-box
                 h1 Project name
                 p Waterloo, ON
-                span(style='padding-left: 45px;') by &nbsp;
-                span(style='color: #879017; text-transform: uppercase;') <b> ngo charity </b>
-                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at. Partem percipit at ius. Est mundi essent efficiantur id.
+                span(style='padding-left: 40px;') by &nbsp;
+                span(style='color: #879017; text-transform: uppercase;') <b> spirit of life </b>
+                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at.
                 .decor-strip
-                p(style='padding-top:15px; color: grey; float:left;') Looking for:
-                button.btn.btn-outline-secondary(id='soft-butt') Software
-                button.btn.btn-outline-secondary(id='design-butt') Design
-                button.btn.btn-outline-secondary(id='business-butt') Business
+                p(style='padding-top:15px; color: grey; float:left; margin-right:5px;') Looking for:
+                .looking-for
+                    button.btn.btn-outline-secondary(id='soft-butt') Software
+                    button.btn.btn-outline-secondary(id='design-butt') Design
             .job-box
                 h1 Project name
                 p Toronto, ON
-                span(style='padding-left: 45px;') by &nbsp;
+                span(style='padding-left: 40px;') by &nbsp;
                 span(style='color: #879017; text-transform: uppercase;') <b> ngo charity </b>
-                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at. Partem percipit at ius. Est mundi essent efficiantur id.
+                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at.
                 .decor-strip
-                p(style='padding-top:15px; color: grey; float:left;') Looking for:
-                button.btn.btn-outline-secondary(id='business-butt') Business
+                p(style='padding-top:15px; color: grey; float:left; margin-right:5px;') Looking for:
+                .looking-for
+                    button.btn.btn-outline-secondary(id='business-butt') Business
             .job-box
                 h1 Project name
                 p Toronto, ON
-                span(style='padding-left: 45px;') by &nbsp;
-                span(style='color: #879017; text-transform: uppercase;') <b> ngo charity </b>
-                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at. Partem percipit at ius. Est mundi essent efficiantur id.
+                span(style='padding-left: 40px;') by &nbsp;
+                span(style='color: #879017; text-transform: uppercase;') <b> autism ontario </b>
+                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at.
                 .decor-strip
-                p(style='padding-top:15px; color: grey; float:left;') Looking for:
-                button.btn.btn-outline-secondary(id='business-butt') Business
+                p(style='padding-top:15px; color: grey; float:left; margin-right:5px;') Looking for:
+                .looking-for
+                    button.btn.btn-outline-secondary(id='business-butt') Business
+            .job-box
+                h1 Project name
+                p Waterloo, ON
+                span(style='padding-left: 40px;') by &nbsp;
+                span(style='color: #879017; text-transform: uppercase;') <b> ngo charity </b>
+                p Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at.
+                .decor-strip
+                p(style='padding-top:15px; color: grey; float:left; margin-right:5px;') Looking for:
+                .looking-for
+                    button.btn.btn-outline-secondary(id='soft-butt') Software
+                    button.btn.btn-outline-secondary(id='design-butt') Design
+        .job-rows
+            span Result for: All
+
+            table
+                tbody
+                    tr.header
+                        th.project.text-center.align-middle Project
+                            .v-divide
+                        th.charity
+                            .v-divide
+                        th.num_pears
+                            .v-divide
+                        th.num_pos
+                            .v-divide
+                        th.num_app
+            .job-row
 
     script.
         $('button').on('click', function(){

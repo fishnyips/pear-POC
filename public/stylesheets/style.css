@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d1d364;
   border-color: #d1d364;
   color: white !important;
-  height: 35px;
+  height: 32px;
   padding-top:5px!important;
 }
 
@@ -416,7 +416,6 @@ h1, h2, h3, h4, h5, h6 {
 .categories {
   float: left;
   width: 100%;
-  margin: 0 auto;
   padding-top: 50px;
   color: darkgrey;
   font-family: "Poppins", sans-serif;
@@ -427,10 +426,8 @@ h1, h2, h3, h4, h5, h6 {
 .search-bar {
   clear:left;
   width:100%;
-  margin: 0 auto;
   height: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px;
 }
 
 .search-bar * {
@@ -453,16 +450,18 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
-.test{
+.job-cards{
   width: 100%;
   height: auto;
   float:left;
+  display: none;
 }
 
 .job-box {
   float:left;
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 40px;
   position: relative; 
   width: 314.66px;
   height: 260px;
@@ -472,17 +471,81 @@ h1, h2, h3, h4, h5, h6 {
 .job-box button {
   float:left;
   padding: 0px 0;
-  font-size: 12px;
+  font-size: 8px;
   font-family: "Poppins Light", sans-serif;
   font-weight: 400;
   border-color: darkgrey;
-  width: 90px;
-  height: 22px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 18px;
+  width: 60px;
+  height: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
   border-radius: 0px;
 }
+
+.job-rows {
+  width: 100%;
+  height: auto;
+  margin-left:20px;
+  margin-right:20px;
+  font-size: 12px;
+  color: darkgray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+}
+
+.job-rows {
+  /*background: url(../images/job-search-header.png) center top no-repeat;
+  background-size: 100%;*/
+  clear:left;
+  width:1024px;
+  height: 60px;
+}
+
+table{
+  height:auto;
+}
+
+th {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  outline: none;
+  height: 100%;
+}
+
+th.project {
+  width: 120px;
+}
+table {
+  width:1024px;
+  height:auto;
+  margin-top: 20px;
+}
+
+tr.header {
+  background-color: #c6c642;
+  clear:left;
+  width:1024px;
+  height: 60px;
+  color: white;
+
+}
+
+.v-divide {
+  width:1.5px;
+  float:right;
+  border-right: 1.5px solid white;
+  height: 40px;
+}
+
+.looking-for {
+  margin-right: 40px;
+}
+
+
 
 .job-box * {
   margin-top: 10px;
@@ -490,9 +553,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .job-box h1 {
-  margin-top: 40px;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-size: 20px;
   color: grey;
   font-family: "Poppins Bold", sans-serif;
@@ -512,8 +575,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 6px;
   font-size: 12px;
   color: darkgray;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: "Poppins Bold", sans-serif;
   font-weight: 400;
 }
