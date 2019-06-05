@@ -502,18 +502,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
 }
 
-table{
-  height:auto;
-}
+
 
 th {
+  height: 60px;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 14px;
-  text-decoration: none;
-  outline: none;
-  height: 100%;
 }
 
 th.project {
@@ -534,11 +530,15 @@ tr.header {
 
 }
 
+th.divide {
+  width:1.5px;
+}
+
 .v-divide {
   width:1.5px;
   float:right;
   border-right: 1.5px solid white;
-  height: 40px;
+  height: 30px;
 }
 
 .looking-for {
