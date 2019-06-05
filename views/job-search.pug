@@ -1,5 +1,6 @@
 extend header
 block content
+
     .job-search-wrap
         .categories
             span CATEGORIES
@@ -32,7 +33,12 @@ block content
                     option(value='audi') Audi
         br
         br
+
         .job-cards
+            .results
+                span Result for: All
+                label.switch(style='float:right;') Listview
+
             .job-box
                 h1 Project name
                 p Waterloo, ON
@@ -77,21 +83,74 @@ block content
                     button.btn.btn-outline-secondary(id='design-butt') Design
         .job-rows
             span Result for: All
-
+            label.switch(style='float:right;') Listview
             table
                 tbody
                     tr.header
-                        th.project.text-center.align-middle project
+                        th.project.text-center project
                         th.divide
-                            .v-divide.align-middle
-                        th.charity
                             .v-divide
-                        th.num_pears
+                        th.charity.text-center charity
+                        th.divide
                             .v-divide
-                        th.num_pos
+                        th.num_pears.text-center pears
+                        th.divide
                             .v-divide
-                        th.num_app
-            .job-row
+                        th.num_pos.text-center number of positions
+                        th.divide
+                            .v-divide
+                        th.num_app.text-center number of applicants
+                    tr.job-row
+                        td APPLE
+                        td
+                        td Red Heart
+                        td
+                        td.number 10
+                        td
+                        td
+                            table.looking-for(cellpadding='10')
+                                tr
+                                    td
+                                        span.number 2
+                                    td
+                                        button.btn.btn-outline-secondary(id='soft-butt') Software
+                                        button.btn.btn-outline-secondary(id='design-butt') Design
+                        td
+                        td.number 20
+                    tr.job-row
+                        td BANANA
+                        td
+                        td Yellow Pillow
+                        td
+                        td.number 10
+                        td
+                        td
+                            table.looking-for(cellpadding='10')
+                                tr
+                                    td
+                                        span.number 3
+                                    td
+                                        button.btn.btn-outline-secondary(id='soft-butt') Software
+                                        button.btn.btn-outline-secondary(id='design-butt') Design
+                                        button.btn.btn-outline-secondary(id='business-butt') Business
+                        td
+                        td.number 30
+                    tr.job-row
+                        td ORANGE
+                        td
+                        td Orange Mandarin
+                        td
+                        td.number 10
+                        td
+                        td
+                            table.looking-for(cellpadding='10')
+                                tr
+                                    td
+                                        span.number 5
+                                    td
+                                        button.btn.btn-outline-secondary(id='business-butt') Business
+                        td
+                        td.number 90
 
     script.
         $('button').on('click', function(){
@@ -108,4 +167,16 @@ block content
             $('#all-butt').addClass('active_button');
             $('#all-butt').css('color', colour);
         });
-    
+
+        $('.switch').click(function () {
+            let curr = $(this).text();
+            if (curr==='Listview') {
+                $('.job-cards').css('display', 'block');
+                $('.job-rows').css('display', 'none');
+                $('.switch').html('Cardview');
+            } else {
+                $('.job-cards').css('display', 'none');
+                $('.job-rows').css('display', 'block');
+                $('.switch').html('Listview');
+            }
+        });

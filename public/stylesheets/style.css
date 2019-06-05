@@ -442,6 +442,8 @@ h1, h2, h3, h4, h5, h6 {
   color: darkgrey;
 }
 
+
+
 .job-search-wrap {
   display: flex;
   flex-direction: column;
@@ -468,9 +470,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.job-box button {
+.job-box button, .job-row button{
   float:left;
-  padding: 0px 0;
+  padding: 0 0;
   font-size: 8px;
   font-family: "Poppins Light", sans-serif;
   font-weight: 400;
@@ -479,10 +481,47 @@ h1, h2, h3, h4, h5, h6 {
   height: 15px;
   margin-right: 5px;
   margin-left: 5px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
-.job-rows {
+.looking-for {
+  margin-right: 15%;
+  height: 50px;
+}
+
+.job-row .looking-for {
+  line-height:100px;
+  width: inherit;
+  margin: auto;
+}
+
+.number{
+  font-weight:500;
+  color:black;
+
+}
+
+.job-row button{
+  margin-bottom:5px;
+  float:right;
+  clear:right;
+}
+
+.job-row span{
+  display:inline-block;
+  float:right;
+  vertical-align:middle;
+}
+
+
+.test {
+  display:inline-block;
+  line-height:100px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.job-rows{
   width: 100%;
   height: auto;
   margin-left:20px;
@@ -505,16 +544,35 @@ h1, h2, h3, h4, h5, h6 {
 
 
 th {
-  height: 60px;
+  height: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 14px;
+  width: auto;
 }
 
-th.project {
-  width: 120px;
+tr.job-row {
+  height: 100px;
+  width:1024px;
 }
+
+td {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+tr.job-row:nth-child(odd) {
+  background: #f3f3f3 !important;
+
+}
+tr.job-row:nth-child(even) {background: white !important;}
+
+
 table {
   width:1024px;
   height:auto;
@@ -525,9 +583,21 @@ tr.header {
   background-color: #c6c642;
   clear:left;
   width:1024px;
-  height: 60px;
+  height: 50px;
   color: white;
 
+}
+
+.results {
+  padding-bottom:20px;
+  width: 1024px;
+  height: auto;
+  margin-left:20px;
+  margin-right:20px;
+  font-size: 12px;
+  color: darkgray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 th.divide {
@@ -539,10 +609,6 @@ th.divide {
   float:right;
   border-right: 1.5px solid white;
   height: 30px;
-}
-
-.looking-for {
-  margin-right: 40px;
 }
 
 
