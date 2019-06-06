@@ -521,6 +521,23 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.plain {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  color:gray;;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  text-align: left;
+  width:40px;
+  height: 15px;
+  font-size: 10px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .job-row button{
   margin-bottom:5px;
   float:right;
@@ -529,7 +546,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .job-row span{
   display:inline-block;
-  float:right;
   vertical-align:middle;
 }
 
