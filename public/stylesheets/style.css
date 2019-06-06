@@ -313,6 +313,17 @@ h1, h2, h3, h4, h5, h6 {
   display:block !important;
 }
 
+#home-butt{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  line-height: 60px;
+  width: 68px;
+  margin: 0;
+  height:22px;
+}
+
 .btn-option-nav {
   margin: 0;
   position: absolute !important;
