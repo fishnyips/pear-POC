@@ -444,6 +444,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-bar {
+  
   clear:left;
   width:100%;
   height: 30px;
@@ -524,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
 .plain {
   background-color: Transparent;
   background-repeat:no-repeat;
-  color:gray;;
+  color:gray;
   border: none;
   cursor:pointer;
   overflow: hidden;
@@ -567,6 +568,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 
+}
+
+.listview{
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .job-rows {
