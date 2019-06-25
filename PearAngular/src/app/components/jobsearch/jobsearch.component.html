@@ -1,0 +1,109 @@
+<app-navbar></app-navbar>
+<div class="job-search-wrap">
+  <div class="categories"><span>CATEGORIES</span>
+    <button class="btn btn-outline-secondary" id="all-butt">All</button>
+    <button class="btn btn-outline-secondary" id="soft-butt">Software</button>
+    <button class="btn btn-outline-secondary" id="design-butt">Design</button>
+    <button class="btn btn-outline-secondary" id="business-butt">Business</button>
+    <button class="btn btn-outline-secondary" id="science-butt">Science</button>
+    <button class="btn btn-outline-secondary" id="other-butt">Other</button>
+  </div><br /><br />
+  <div class="search-bar">
+    <div class="search">
+      <input class="search-input" type="text" placeholder="Search by keywords" />
+    </div>
+    <div class="location-filter">
+      <select class="select-input">
+        <!-- –– will need to use db to fill here ––-->
+        <option disabled="" selected="" value="">Location</option>
+        <option value="volvo">dummy</option>
+        <option value="saab">dummy</option>
+        <option value="opel">dummy</option>
+        <option value="audi">dummy</option>
+      </select>
+    </div>
+    <div class="type-filter">
+      <select class="select-input">
+        <!-- –– will need to use db to fill here ––-->
+        <option disabled="" selected="" value="">Job Type</option>
+        <option value="volvo">dummy</option>
+        <option value="saab">dummy</option>
+        <option value="opel">dummy</option>
+        <option value="audi">dummy</option>
+      </select>
+    </div>
+  </div><br /><br />
+  <div class="job-cards">
+    <div class="results"><span>Result for: All</span>
+      <label class="switch" style="float:right;">Listview</label>
+    </div>
+    <div class="job-box" *ngFor="let posting of postings">
+      <h1>{{posting.project}}</h1>
+      <p>{{posting.location}}</p><span style="padding-left: 40px;">by &nbsp;</span><span style="color: #879017; text-transform: uppercase;"><b> {{posting.charity}} </b></span>
+      <p>Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at.</p>
+      <div class="decor-strip"></div>
+      <p style="padding-top:15px; color: grey; float:left; margin-right:5px;">Looking for:</p>
+      <div class="looking-for">
+        <button class="btn btn-outline-secondary" id="soft-butt">Software</button>
+        <button class="btn btn-outline-secondary" id="design-butt">Design</button>
+      </div>
+    </div>
+  </div>
+  <div class="job-rows"><span>Result for: All</span>
+    <label class="switch" style="float:right;">Listview</label>
+    <table class="listview">
+      <tbody>
+        <tr class="header">
+          <th class="project text-center">project</th>
+          <th class="divide">
+            <div class="v-divide"></div>
+          </th>
+          <th class="charity text-center">charity</th>
+          <th class="divide">
+            <div class="v-divide"></div>
+          </th>
+          <th class="num_pears text-center">pears</th>
+          <th class="divide">
+            <div class="v-divide"></div>
+          </th>
+          <th class="num_pos text-center">number of positions</th>
+          <th class="divide">
+            <div class="v-divide"></div>
+          </th>
+          <th class="num_app text-center">number of applicants</th>
+        </tr>
+        <tr class="job-row" *ngFor="let posting of postings">
+          <td>{{posting.project}}</td>
+          <td></td>
+          <td>{{posting.charity}}</td>
+          <td></td>
+          <td class="number">{{posting.num_pears}}</td>
+          <td></td>
+          <td>
+            <table class="looking-for" cellpadding="10">
+              <tr>
+                <td><span class="number">{{posting.num_positions}}</span></td>
+                <td>
+                  <button class="btn btn-outline-secondary" id="soft-butt">Software</button>
+                  <button class="btn btn-outline-secondary" id="design-butt">Design</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td></td>
+          <td>
+            <table class="looking-for" cellpadding="25">
+              <tr>
+                <td><span class="number">{{posting.num_applicants}}</span></td>
+                <td>
+                  <button class="btn plain">Apply</button>
+                  <button class="btn plain">Shortlist</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

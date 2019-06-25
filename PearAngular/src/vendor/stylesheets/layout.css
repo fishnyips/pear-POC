@@ -1,0 +1,14 @@
+.pear-name {
+    background: url(../images/pear-name.png) no-repeat;
+    background-size:100%;
+    width:500px;
+    height:150px;
+    margin:0 auto;
+
+}
+
+
+body {
+    background-color: white;
+    margin:0 auto;
+}

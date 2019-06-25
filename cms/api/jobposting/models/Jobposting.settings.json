@@ -1,26 +1,39 @@
 {
   "connection": "default",
-  "collectionName": "jobpostings",
+  "collectionName": "jobposting",
   "info": {
     "name": "jobposting",
-    "description": "job postings"
+    "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
-    "comment": ""
+    "timestamps": true
   },
   "attributes": {
-    "job-name": {
+    "project": {
       "type": "string"
     },
-    "job-desc": {
-      "type": "text"
+    "charity": {
+      "type": "string"
     },
-    "posting-date": {
+    "num_pears": {
+      "type": "integer"
+    },
+    "num_applicants": {
+      "type": "integer"
+    },
+    "post_date": {
       "type": "date"
     },
-    "persons-needed": {
+    "tags": {
+      "enum": [
+        "software,designer,science,business,other"
+      ],
+      "type": "enumeration"
+    },
+    "location": {
+      "type": "string"
+    },
+    "num_positions": {
       "type": "integer"
     }
   }

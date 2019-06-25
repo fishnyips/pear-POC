@@ -1,17 +1,21 @@
+
 {
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-bookshelf",
+      "connector": "strapi-hook-mongoose",
       "settings": {
-        "client": "sqlite",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "client": "mongo",
+        "host": "ds135207.mlab.com",
+        "port": "35207",
+        "database": "heroku_qn8zqbdx",
+        "username": "crystalyip",
+        "password": "crystal123"
       },
-      "options": {}
+      "options": {
+        "authenticationDatabase": "heroku_qn8zqbdx",
+        "ssl": false
+      }
     }
   }
 }
