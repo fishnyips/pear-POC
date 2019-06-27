@@ -15,7 +15,7 @@ body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
-  padding-top: 65px; 
+  padding-top: 65px;
 }
 
 a {
@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   background-color: #f7f8f7;
   margin: 0;
-
+  z-index:999 !important;
 }
 
 /* Nav Meu Container */
@@ -315,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f7f8f7;
   float: right;
   margin: 0;
+  z-index:999 !important;
 }
 
 #li-sign-up {
@@ -439,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding-top: 50px;
   color: darkgrey;
-  
+
 }
 
 .categories button {
@@ -451,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-bar {
-  
+
   clear:left;
   width:100%;
   height: 30px;
@@ -492,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 40px;
-  position: relative; 
+  position: relative;
   width: 314.66px;
   height: 260px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -523,6 +524,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
+
+
+.job-box > .looking-for {
+  float:left;
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  margin:auto;
+}
+
+
 .number{
   font-weight:500;
   color:black;
@@ -530,10 +542,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .plain {
-  background-color: Transparent;
-  background-repeat:no-repeat;
+  background: Transparent no-repeat;
   color:gray;
-  border: none;
+  border: none !important;
   cursor:pointer;
   overflow: hidden;
   outline:none;
@@ -566,7 +577,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .job-rows{
-  width: 100%;
+  width:1024px;
   height: auto;
   margin-left:20px;
   margin-right:20px;
@@ -581,13 +592,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.job-rows {
-  /*background: url(../images/job-search-header.png) center top no-repeat;
-  background-size: 100%;*/
-  clear:left;
-  width:1024px;
-  height: 60px;
-}
 
 
 
@@ -661,6 +665,14 @@ th.divide {
 
 
 
+.modal-body p{
+  font-size: 14px;
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+
 .job-box * {
   margin-top: 10px;
   margin-bottom:0px;
@@ -693,6 +705,7 @@ th.divide {
   margin-right: 40px;
   font-family: "Poppins Bold", sans-serif;
   font-weight: 400;
+  z-index: -1 !important;
 }
 
 
@@ -737,7 +750,7 @@ options {
   font-weight: 400;
   font-size: 12px;
   color: darkgrey;
-  height:28px;
+  height:27px;
   width:423px;
   border: none;
   box-sizing:border-box !important;
@@ -1138,6 +1151,8 @@ p {
   background-color: #d1d364 !important;
   border-color: #d1d364 !important;
   color: white !important;
+  z-index: -1 !important;
+  position: relative !important;
 }
 
 #student-button {

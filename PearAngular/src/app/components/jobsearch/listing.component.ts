@@ -6,7 +6,7 @@ import Jobposting from '../../models/jobposting.model';
 import { JobListingService } from '../../services/job-listing.service';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'jobsearch',
@@ -16,13 +16,14 @@ import { Router } from '@angular/router';
 
 @Injectable()
 export class ListingComponent implements OnInit {
+  public searchText : string;
   postings: Jobposting[];
-  displayedColumns = ['title', 'responsible', 'severity', 'status', 'actions'];
+  locations: [];
 
   ngOnInit(): void {
     console.log('fetching');
-    this.fetchIssues();
-    $('.btn-outline-secondary').on('click', function() {
+    this.fetchJobs();
+    $(document).on('click', '.btn-outline-secondary', function(){
       console.log(99);
       let colour = $(this).css("border-color");
       $('.btn-outline-secondary').removeClass('active_button');
@@ -31,13 +32,13 @@ export class ListingComponent implements OnInit {
       $(this).css('color', colour);
     });
     //Home button active on page load
-    
+
     let colour = $('#all-butt').css("background-color");
     $('#all-butt').css('color', colour);
     $('#all-butt').addClass('active_button');
-    
-    
-    $('.switch').click(function() {
+
+
+    $('.switch').on('click', function() {
       let curr = $(this).text();
       if (curr === 'Listview') {
         $('.job-cards').css('display', 'block');
@@ -47,11 +48,13 @@ export class ListingComponent implements OnInit {
         $('.job-cards').css('display', 'none');
         $('.job-rows').css('display', 'block');
         $('.switch').html('Listview');
-      } 
+      }
     });
+
+
   }
 
-  fetchIssues() {
+  fetchJobs() {
     console.log(9999);
     this.listingService
     .getJobpostings()

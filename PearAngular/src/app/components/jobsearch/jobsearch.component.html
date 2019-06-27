@@ -10,7 +10,7 @@
   </div><br /><br />
   <div class="search-bar">
     <div class="search">
-      <input class="search-input" type="text" placeholder="Search by keywords" />
+      <input [(ngModel)]="searchText" class="search-input" type="text" placeholder="Search by keywords" />
     </div>
     <div class="location-filter">
       <select class="select-input">
@@ -33,16 +33,37 @@
       </select>
     </div>
   </div><br /><br />
+  <!-- The Modal -->
+  <div class="modal fade" role="dialog" *ngFor="let posting of postings | startsWith:searchText" [attr.id]="posting.id" >
+    <div class="modal-dialog modal-sm" >
+      <div class="modal-content" >
+        <div class="modal-header" style="position:relative;">
+          <h4 class="modal-title">{{posting.project}}</h4>
+        </div>
+        <div class="modal-body">
+          <p>{{posting.description}}</p>
+          <div class="modal-details">
+            <p><b>{{posting.num_positions}}</b> active project(s)</p>
+            <p><b>{{posting.num_applicants}}</b> applicant(s)</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="job-cards">
     <div class="results"><span>Result for: All</span>
       <label class="switch" style="float:right;">Listview</label>
     </div>
-    <div class="job-box" *ngFor="let posting of postings">
+    <div class="job-box"  *ngFor="let posting of postings | startsWith:searchText">
       <h1>{{posting.project}}</h1>
       <p>{{posting.location}}</p><span style="padding-left: 40px;">by &nbsp;</span><span style="color: #879017; text-transform: uppercase;"><b> {{posting.charity}} </b></span>
-      <p>Lorem ipsum dolor sit amet, eu cetero scriptorem pri. Eu pericula comprehensam vis. Duo debet accusam explicari ex. Conceptam argumentum ne vis, pri vide augue nonumy at.</p>
+      <p style="overflow: hidden; text-overflow: ellipsis; height: 68px;">{{posting.description}} </p>
+      <p class="moreDetails" data-toggle="modal" [attr.data-target]="'#'+posting.id"><b>See details</b></p>
       <div class="decor-strip"></div>
-      <p style="padding-top:15px; color: grey; float:left; margin-right:5px;">Looking for:</p>
+      <p style="position: absolute; bottom:35px; color: grey; float:left; margin-right:5px;">Looking for:</p>
       <div class="looking-for">
         <button class="btn btn-outline-secondary" id="soft-butt">Software</button>
         <button class="btn btn-outline-secondary" id="design-butt">Design</button>
@@ -72,7 +93,7 @@
           </th>
           <th class="num_app text-center">number of applicants</th>
         </tr>
-        <tr class="job-row" *ngFor="let posting of postings">
+        <tr class="job-row" *ngFor="let posting of postings | startsWith:searchText">
           <td>{{posting.project}}</td>
           <td></td>
           <td>{{posting.charity}}</td>
