@@ -33,6 +33,9 @@
       </select>
     </div>
   </div><br /><br />
+  <div class="results"><span>Result for: All</span>
+    <label class="switch" style="float:right;">Listview</label>
+  </div>
   <!-- The Modal -->
   <div class="modal fade" role="dialog" *ngFor="let posting of postings | startsWith:searchText" [attr.id]="posting.id" >
     <div class="modal-dialog modal-sm" >
@@ -54,9 +57,7 @@
     </div>
   </div>
   <div class="job-cards">
-    <div class="results"><span>Result for: All</span>
-      <label class="switch" style="float:right;">Listview</label>
-    </div>
+
     <div class="job-box"  *ngFor="let posting of postings | startsWith:searchText">
       <h1>{{posting.project}}</h1>
       <p>{{posting.location}}</p><span style="padding-left: 40px;">by &nbsp;</span><span style="color: #879017; text-transform: uppercase;"><b> {{posting.charity}} </b></span>
@@ -70,8 +71,7 @@
       </div>
     </div>
   </div>
-  <div class="job-rows"><span>Result for: All</span>
-    <label class="switch" style="float:right;">Listview</label>
+  <div class="job-rows">
     <table class="listview">
       <tbody>
         <tr class="header">

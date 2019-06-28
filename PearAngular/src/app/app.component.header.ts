@@ -10,8 +10,11 @@ export class AppComponentHeader implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    console.log(8888);
-    
+    if ($(this).parents('.nav-menu').length) {
+      $('.nav-menu .menu-active').removeClass('menu-active');
+      $(this).closest('li').addClass('menu-active');
+    }
+
   }
   title = 'PearAngular';
 }

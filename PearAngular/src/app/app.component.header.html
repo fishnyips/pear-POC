@@ -1,49 +1,49 @@
 <div class="nav-header sticky">
-    <nav id="nav-menu-container">
-        <ul class="nav-menu"> 
-            <li><a [routerLink]="'/public'" style="height:60px; width:80px; display:inline-block; line-height:60px;"><img src="assets/home-button.png" id="home-butt" /></a></li>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu left">
+            <li><a class="menu-home" [routerLink]="'/public'" style="height:60px; width:80px; display:inline-block; line-height:60px;"><img src="assets/home-button.png" id="home-butt" /></a></li>
             <li class="menu-active"><a [routerLink]="'/jobsearch'">JOBS</a></li>
             <li><a routerLink="hackathon">HACKATHON</a></li>
             <li><a routerLink="about">ABOUT US</a></li>
         </ul>
-        </nav> 
-        <nav id="nav-menu-container-right">
-        <ul class="nav-menu">
-            <li><a routerLink="portfolio">For Charities</a></li>
-            <li id="li-sign-up"><a class="btn btn-option-nav" routerLink="#sign-up">Sign Up</a></li>
-            <!--
-            ==========================
-            li.menu-has-children
-                                a(href='') Drop Down
-                                ul
-                                    li
-                                        a(href='#') Drop Down 1
-                                    li.menu-has-children
-                                        a(href='#') Drop Down 2
-                                        ul
-                                            li
-                                                a(href='#') Deep Drop Down 1
-                                            li
-                                                a(href='#') Deep Drop Down 2
-                                            li
-                                                a(href='#') Deep Drop Down 3
-                                            li
-                                                a(href='#') Deep Drop Down 4
-                                            li
-                                                a(href='#') Deep Drop Down 5
-                                    li
-                                        a(href='#') Drop Down 3
-                                    li
-                                        a(href='#') Drop Down 4
-                                    li
-                                        a(href='#') Drop Down 5
-                            li
-                                a(href='#contact') Contact Us
-            ============================
-            
-            
-            -->
-        </ul>
+      </nav>
+      <nav id="nav-menu-container-right">
+          <ul class="nav-menu right">
+              <li><a routerLink="portfolio">For Charities</a></li>
+              <li><a class="btn btn-option-nav li-sign-up" routerLink="#sign-up">Sign Up</a></li>
+              <!--
+              ==========================
+              li.menu-has-children
+                                  a(href='') Drop Down
+                                  ul
+                                      li
+                                          a(href='#') Drop Down 1
+                                      li.menu-has-children
+                                          a(href='#') Drop Down 2
+                                          ul
+                                              li
+                                                  a(href='#') Deep Drop Down 1
+                                              li
+                                                  a(href='#') Deep Drop Down 2
+                                              li
+                                                  a(href='#') Deep Drop Down 3
+                                              li
+                                                  a(href='#') Deep Drop Down 4
+                                              li
+                                                  a(href='#') Deep Drop Down 5
+                                      li
+                                          a(href='#') Drop Down 3
+                                      li
+                                          a(href='#') Drop Down 4
+                                      li
+                                          a(href='#') Drop Down 5
+                              li
+                                  a(href='#contact') Contact Us
+              ============================
+
+
+              -->
+          </ul>
     </nav>
 </div>
 <router-outlet></router-outlet>
